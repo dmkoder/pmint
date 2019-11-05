@@ -39,13 +39,13 @@ Heksadekadni kod |Mnemotehnička oznaka |Artesni deo |Fuknkcija         |Komenta
 53               |BES                  |R           |R→BI              |Bezuslovni skok
 54               |ZAR                  |R           |                  |Završavanje
 ```
-Pseudomašinska instrukcija za rezervisanje memorijskih lokacija je DM <Ceo broj> 
+Pseudomašinska instrukcija za rezervisanje memorijskih lokacija je DM \<Ceo broj\> 
 Pseudomašinske instrukcije za definisanje podataka:
- - DC <Lista celih brojeva>
- - DR <Lista realnih brojeva>
- - DZ <Znakovni podatak>
+ - DC \<Lista celih brojeva\>
+ - DR \<Lista realnih brojeva\>
+ - DZ \<Znakovni podatak\>
 
-Mogući načini adresiranja u jesu:
+Mogući načini adresiranja jesu:
  - Direktno adresiranje
  - Indeksno adresiranje
  - Relativno adresiranje
