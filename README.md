@@ -4,17 +4,17 @@ Pmj-interpreter je Interpreter pseudomašinskog jezika razvijen pomoću Flex i G
 ## Instrukcije
 ```
 Heksadekadni kod |Mnemotehnička oznaka |Artesni deo |Fuknkcija         |Komentar
-01	             |SAB                  |R	          |S(AK) + S(R)→AK	 |Aritmetičke 
-02	             |ODU	                 |R	          |S(AK) - S(R)→AK	 |operacija 
-03	             |MNO	                 |R	          |S(AK) * S(R)→AK	 |u 
+01               |SAB                  |R	          |S(AK) + S(R)→AK	 |Aritmetičke 
+02               |ODU	                 |R	          |S(AK) - S(R)→AK	 |operacija 
+03               |MNO	                 |R	          |S(AK) * S(R)→AK	 |u 
 04               |DEL	                 |R	          |S(AK) / S(R)→AK	 |pokretnom 
 05               |PZA	                 |R	          |-S(AK) → AK	     |zarezu
-11               |SABF	               |R	          |S(AK) + S(R)→AK	 |Aritmetičke 
-12               |ODUF	               |R	          |S(AK) - S(R)→AK	 |operacije 
-13               |MNOF	               |R	          |S(AK) * S(R)→AK	 |u 
-14               |DELF	               |R	          |S(AK) / S(R)→AK	 |fiksnom 
-15               |PZAF	               |R	          |-S(AK) → AK	     |zarezu
-21               |KON	                 |R	          |S(AK) Ʌ S(R)→AK	 |Logičke  
+11               |SABF                 |R	          |S(AK) + S(R)→AK	 |Aritmetičke 
+12               |ODUF                 |R	          |S(AK) - S(R)→AK	 |operacije 
+13               |MNOF                 |R	          |S(AK) * S(R)→AK	 |u 
+14               |DELF                 |R	          |S(AK) / S(R)→AK	 |fiksnom 
+15               |PZAF                 |R	          |-S(AK) → AK	     |zarezu
+21               |KON                  |R	          |S(AK) Ʌ S(R)→AK	 |Logičke  
 22               |DIS	                 |R	          |S(AK) V S(R)→AK	 |operacije
 23               |NEG	                 |	          |-S(AK)→AK	       |
 31               |POL	                 |R	          |Улево R пута	     |Linijsko
