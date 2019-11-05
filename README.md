@@ -2,6 +2,18 @@
 Pmj-interpreter je Interpreter pseudomašinskog jezika razvijen pomoću Flex i GNU Bison tehnologija.
 
 ## Struktura
+```
++ pmj-interpreter/
+  + headerFiles/
+    - engine.h
+    - macros.h
+    - structs.h
+  - install.sh
+  - lex.l
+  - readme.md
+  - welcome.txt
+  - yacc.y
+```
 
 ## Instrukcije
 Postoje tri osnovne grupe instrukcija:
