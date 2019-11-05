@@ -1,6 +1,8 @@
 # pmj-interpreter
 Pmj-interpreter je Interpreter pseudomašinskog jezika razvijen pomoću Flex i GNU Bison tehnologija.
 
+## Struktura
+
 ## Instrukcije
 Postoje tri osnovne grupe instrukcija:
 1. Instrukcije obrade
@@ -39,7 +41,8 @@ Heksadekadni kod |Mnemotehnička oznaka |Artesni deo |Fuknkcija         |Komenta
 53               |BES                  |R           |R→BI              |Bezuslovni skok
 54               |ZAR                  |R           |                  |Završavanje
 ```
-Pseudomašinska instrukcija za rezervisanje memorijskih lokacija je DM \<Ceo broj\> 
+Pseudomašinska instrukcija za rezervisanje memorijskih lokacija je DM \<Ceo broj\>.
+
 Pseudomašinske instrukcije za definisanje podataka:
  - DC \<Lista celih brojeva\>
  - DR \<Lista realnih brojeva\>
@@ -52,5 +55,28 @@ Mogući načini adresiranja jesu:
  - Indirektno adresiranje
  - Neposredno adresiranje
 
+## Instalacija
 
-Podržani su isključivo Linux sistemi. Skripta za instalaciju je namenjena isključivo Debian distribucijama, za ostale distribucija neophodno je adekvatno izmeniti skriptu.
+**Napomena -** Podržani su isključivo Linux sistemi. Skripta za instalaciju je namenjena isključivo Debian distribucijama, za ostale distribucije neophodno je adekvatno izmeniti skriptu.
+
+Nakon preuzimanja koda, na lokalnoj mašini je poželjno pozicionirati se u direktorijum gde se nalazi `install.sh` skripta. Nakon toga potrebno je kao `sudo` korisnik, iz komandne linije,  izvršiti komandu za dodavanje pristupa izvršavanja skripti i pokrenuti istu.
+
+```
+//Dodavanje pristupa install.sh skripti
+sudo chmod +x install.sh
+//Pokretanje skripte
+sudo ./install.sh
+```
+
+Skripta za instalaciju će instalirate Flex i Bison koji su neohodni kako bi kod mogao da se kompajlira. Nakon toga kod će biti kompajliran i izvršni fajl će biti prebačen u `/usr/bin/` direktorijum, odakle će biti dostupan svim korisnicima. Nakon toga biće pokrenuto interpretiranje `welcome.txt` fajla u kome se nalazi program napisan u pseudomašinskom jeziku, čiji rezultat treba da bude ispisan.
+
+## Upotreba
+
+Nakon instalacije interpreter se poziva komandom `pmj-interpreter` pod zastavicom `-f` navodi se nayiv fajla u kome se nalazi kod koji treba da bude interpretiran, zastavica `-c` je opciona i služi da prikaže izlaz u boji.
+
+Ako pretpostavim da je kod u fajlu `test.txt` onda se on interpretira na sledeći način:
+```
+pmj-interpreter -f test.txt -c
+```
+
+Izlaz interpretera predstavlja ispis svih memorijskih lokacija u programu.
