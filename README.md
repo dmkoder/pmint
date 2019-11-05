@@ -2,6 +2,19 @@
 Pmj-interpreter je Interpreter pseudomašinskog jezika razvijen pomoću Flex i GNU Bison tehnologija.
 
 ## Instrukcije
+Postoje tri osnovne grupe instrukcija:
+1.Instrukcije obrade
+-Aritmetičke operacije nad realnim brojevima
+-Aritmetičke operacije nad celim brojevima
+-Logičke operacije
+-Operacije pomeranja sadržaja registra
+2.Instrukcije prenošenja
+-Instrukcije za komunikaciju između memorijskih registara i akumulatora
+3.Instrukcije upravljanja 
+-Instrukcije uslovnog skoka
+-Instrukcije bezuslovnog skoka
+-Instrukcije prestanka rada
+
 ```
 Heksadekadni kod |Mnemotehnička oznaka |Artesni deo |Fuknkcija         |Komentar
 01               |SAB                  |R           |S(AK) + S(R)→AK   |Aritmetičke 
