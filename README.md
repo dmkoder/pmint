@@ -39,6 +39,18 @@ Heksadekadni kod |Mnemotehnička oznaka |Artesni deo |Fuknkcija         |Komenta
 53               |BES                  |R           |R→BI              |Bezuslovni skok
 54               |ZAR                  |R           |                  |Završavanje
 ```
+Pseudomašinska instrukcija za rezervisanje memorijskih lokacija je DM <Ceo broj> 
+Pseudomašinske instrukcije za definisanje podataka:
+ - DC <Lista celih brojeva>
+ - DR <Lista realnih brojeva>
+ - DZ <Znakovni podatak>
+
+Mogući načini adresiranja u jesu:
+ - Direktno adresiranje
+ - Indeksno adresiranje
+ - Relativno adresiranje
+ - Indirektno adresiranje
+ - Neposredno adresiranje
 
 
 Podržani su isključivo Linux sistemi. Skripta za instalaciju je namenjena isključivo Debian distribucijama, za ostale distribucija neophodno je adekvatno izmeniti skriptu.
