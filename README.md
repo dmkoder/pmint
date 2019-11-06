@@ -84,7 +84,7 @@ Skripta za instalaciju će instalirate Flex i Bison koji su neohodni kako bi kod
 
 ## Upotreba
 
-Nakon instalacije interpreter se poziva komandom `pmj-interpreter` pod zastavicom `-f` navodi se nayiv fajla u kome se nalazi kod koji treba da bude interpretiran, zastavica `-c` je opciona i služi da prikaže izlaz u boji.
+Nakon instalacije interpreter se poziva komandom `pmj-interpreter`, pod zastavicom `-f` navodi se naziv fajla u kome se nalazi kod koji treba da bude interpretiran, zastavica `-c` je opciona i služi da prikaže izlaz u boji.
 
 Ako pretpostavim da je kod u fajlu `test.txt` onda se on interpretira na sledeći način:
 ```
