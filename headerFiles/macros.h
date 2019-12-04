@@ -19,7 +19,7 @@
 #define VAR_OUT_OF_BOUNDS_CHECK(address) if(CHECK_VARIABLE_ADDRESS(address)) \
 									{ printf("%s RUNTIME ERROR: %s >>> Out of bounds! Address %d is not defined! <<< \n%s", RED, YEL, address, RESET); return -1404; }
 
-#define VAR_TYPE_DOUBLE_CHECK(address, varTypeA, varTypeB) if(variables[VARIABLE_TO_LOCAL(address)].type != varTypeA || variables[VARIABLE_TO_LOCAL(address)].type != varTypeB) \
+#define VAR_TYPE_DOUBLE_CHECK(address, varTypeA, varTypeB) if(variables[VARIABLE_TO_LOCAL(address)].type != varTypeA && variables[VARIABLE_TO_LOCAL(address)].type != varTypeB) \
 									{ printf("%s RUNTIME ERROR: %s >>> Type mismatch! Variable type: %c. Type should be: %c or %c! <<< \n%s" , RED, YEL, variables[VARIABLE_TO_LOCAL(address)].type, varTypeA, varTypeB, RESET); return -1505; }
 
 #define ACM_VAR_TYPE_CHECK(address, varType) if(accumulator.type != varType || variables[VARIABLE_TO_LOCAL(address)].type != varType) \
