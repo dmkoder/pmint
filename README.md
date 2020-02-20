@@ -1,9 +1,9 @@
-# pmj-interpreter
-Pmj-interpreter je Interpreter pseudomašinskog jezika razvijen pomoću Flex i GNU Bison tehnologija.
+# pmint
+Pmint je Interpreter pseudomašinskog jezika razvijen pomoću Flex i GNU Bison tehnologija.
 
 ## Struktura
 ```
-+ pmj-interpreter/
++ pmint/
   + headerFiles/
     - engine.h
     - macros.h
