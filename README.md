@@ -69,24 +69,28 @@ Mogući načini adresiranja jesu:
 
 ## Instalacija
 
-1.) Pre same instalacije neophodno je instalirati Flex i Bison. Na sistemima Debian distribucije (Ubuntu) ovo je moguce uraditi komandom:
+1. Pre same instalacije neophodno je instalirati Flex i Bison. Na sistemima Debian distribucije (Ubuntu) ovo je moguce uraditi komandom:
 ```
 sudo apt install flex bison
 ```
-2.) Sledeci korak jeste preuzimanje git repozitorijuma. Moguće je skinuti ručno repozitorijum u obliku .zip fajla, ili iz komandne linije komandom:
+2. Sledeci korak jeste preuzimanje git repozitorijuma. Moguće je skinuti ručno repozitorijum u obliku .zip fajla, ili iz komandne linije komandom:
 ```
-git clone https://github.com/dmkoder/pmj-interpreter.git
+git clone https://github.com/dmkoder/pmint.git
 ```
-3.) Nakon toga pozicionirajte se u root direktorijum kloniranog projekta i izvršite komandu make iz komandne linije:
+3. Nakon toga pozicionirajte se u root direktorijum kloniranog projekta i izvršite komandu make iz komandne linije:
 ```
 make
 ```
-4.) Rezultat komande make će biti ```mpint``` izvršni fajl. Kako bi izvršni fajl bio svima dostupan premestite ga u ```/usr/bin/``` direktorijum komandom.
+4. Rezultat komande make će biti ```mpint``` izvršni fajl. Kako bi izvršni fajl bio svima dostupan premestite ga u ```/usr/bin/``` direktorijum komandom.
 
-```mv pmint /usr/bin/```
+```
+mv pmint /usr/bin/
+```
 
 5.) Testirajte program (u istom direktorijumu) komandom:
-```pmint -f welcome.txt -c```
+```
+pmint -f welcome.txt -c
+```
 
 
 ## Upotreba
