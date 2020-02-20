@@ -69,18 +69,25 @@ Mogući načini adresiranja jesu:
 
 ## Instalacija
 
-**Napomena -** Podržani su isključivo Linux sistemi. Skripta za instalaciju je namenjena isključivo Debian distribucijama, za ostale distribucije neophodno je adekvatno izmeniti skriptu.
-
-Nakon preuzimanja koda, na lokalnoj mašini je poželjno pozicionirati se u direktorijum gde se nalazi `install.sh` skripta. Nakon toga potrebno je kao `sudo` korisnik, iz komandne linije,  izvršiti komandu za dodavanje pristupa izvršavanja skripti i pokrenuti istu.
-
+1.) Pre same instalacije neophodno je instalirati Flex i Bison. Na sistemima Debian distribucije (Ubuntu) ovo je moguce uraditi komandom:
 ```
-//Dodavanje pristupa install.sh skripti
-sudo chmod +x install.sh
-//Pokretanje skripte
-sudo ./install.sh
+sudo apt install flex bison
 ```
+2.) Sledeci korak jeste preuzimanje git repozitorijuma. Moguće je skinuti ručno repozitorijum u obliku .zip fajla, ili iz komandne linije komandom:
+```
+git clone https://github.com/dmkoder/pmj-interpreter.git
+```
+3.) Nakon toga pozicionirajte se u root direktorijum kloniranog projekta i izvršite komandu make iz komandne linije:
+```
+make
+```
+4.) Rezultat komande make će biti ```mpint``` izvršni fajl. Kako bi izvršni fajl bio svima dostupan premestite ga u ```/usr/bin/``` direktorijum komandom.
 
-Skripta za instalaciju će instalirate Flex i Bison koji su neohodni kako bi kod mogao da se kompajlira. Nakon toga kod će biti kompajliran i izvršni fajl će biti prebačen u `/usr/bin/` direktorijum, odakle će biti dostupan svim korisnicima. Nakon toga biće pokrenuto interpretiranje `welcome.txt` fajla u kome se nalazi program napisan u pseudomašinskom jeziku, čiji rezultat treba da bude ispisan.
+```mv pmint /usr/bin/```
+
+5.) Testirajte program (u istom direktorijumu) komandom:
+```pmint -f welcome.txt -c```
+
 
 ## Upotreba
 
