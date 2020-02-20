@@ -81,7 +81,7 @@ git clone https://github.com/dmkoder/pmint.git
 ```
 make
 ```
-4. Rezultat komande make će biti ```mpint``` izvršni fajl. Kako bi izvršni fajl bio svima dostupan premestite ga u ```/usr/bin/``` direktorijum komandom.
+4. Rezultat komande make će biti `mpint` izvršni fajl. Kako bi izvršni fajl bio svima dostupan premestite ga u `/usr/bin/` direktorijum komandom.
 
 ```
 mv pmint /usr/bin/
@@ -95,11 +95,11 @@ pmint -f welcome.txt -c
 
 ## Upotreba
 
-Nakon instalacije interpreter se poziva komandom `pmj-interpreter`, pod zastavicom `-f` navodi se naziv fajla u kome se nalazi kod koji treba da bude interpretiran, zastavica `-c` je opciona i služi da prikaže izlaz u boji.
+Nakon instalacije interpreter se poziva komandom `pmint`, pod zastavicom `-f` navodi se naziv fajla u kome se nalazi kod koji treba da bude interpretiran, zastavica `-c` je opciona i služi da prikaže izlaz u boji.
 
 Ako pretpostavim da je kod u fajlu `test.txt` onda se on interpretira na sledeći način:
 ```
-pmj-interpreter -f test.txt -c
+pmint -f test.txt -c
 ```
 
 Izlaz interpretera predstavlja ispis svih memorijskih lokacija u programu.
